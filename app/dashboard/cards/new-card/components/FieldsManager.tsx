@@ -20,6 +20,7 @@ import {
   PointerSensor,
   useSensor,
   useSensors,
+  DragEndEvent,
 } from "@dnd-kit/core";
 import {
   arrayMove,
@@ -121,12 +122,12 @@ export default function FieldsManager() {
       ],
     },
   ];
-  function handleDragEnd(event) {
+  function handleDragEnd(event: DragEndEvent) {
     const { active, over } = event;
 
-    if (active.id !== over.id) {
+    if (active.id !== over?.id) {
       const oldIndex = fields.findIndex((field) => field.id === active.id);
-      const newIndex = fields.findIndex((field) => field.id === over.id);
+      const newIndex = fields.findIndex((field) => field.id === over?.id);
       const newArray = arrayMove(fields, oldIndex, newIndex);
 
       setValue("fields", newArray, { shouldValidate: true });

@@ -16,8 +16,8 @@ import {
 import { Facebook, Linkedin } from "lucide-react";
 import TwitterIcon from "@/components/icons/twitter-icon";
 import TiktokIcon from "@/components/icons/tiktok-icon";
-import { SocialIcon } from "@/app/profile/[id]/page";
 import { cn } from "@/lib/utils";
+import { SocialIcon } from "@/components/icons/social-icon";
 
 export const fieldIcons = {
   website: Link2,

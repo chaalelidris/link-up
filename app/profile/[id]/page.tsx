@@ -18,6 +18,7 @@ import {
 } from "iconsax-react";
 import TiktokIcon from "@/components/icons/tiktok-icon";
 import TwitterIcon from "@/components/icons/twitter-icon";
+import { SocialIcon } from "@/components/icons/social-icon";
 export default function ProfilePage() {
   return (
     <div className="min-h-screen flex flex-col items-center py-8 px-4">
@@ -102,14 +103,6 @@ function IconLink({
         <Icon className="size-6 md:size-14" />
       </div>
       <span className="text-gray-600">{label}</span>
-    </div>
-  );
-}
-
-export function SocialIcon({ icon: Icon }: { icon: React.ElementType }) {
-  return (
-    <div className="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center">
-      <Icon className="w-5 h-5" />
     </div>
   );
 }
