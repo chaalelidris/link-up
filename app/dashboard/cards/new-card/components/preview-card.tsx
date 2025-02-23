@@ -41,7 +41,7 @@ export default function PreviewCard({
   showSocialMedia?: boolean;
 }) {
   return (
-    <div className="sticky top-4 col-span-12 lg:col-span-4 h-fit ">
+    <div className="lg:sticky lg:top-4 col-span-12 lg:col-span-4 h-fit ">
       <Card className="relative overflow-hidden rounded-3xl shadow-xl">
         <Image
           src={`/images/cards/${values.design}-bg.${

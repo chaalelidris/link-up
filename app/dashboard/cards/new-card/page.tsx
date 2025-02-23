@@ -167,6 +167,7 @@ export default function NewCardPage() {
       <section className="grid grid-cols-12 gap-8">
         {/* Card Preview */}
         <PreviewCard values={previewData} showSocialMedia />
+
         {/* Settings */}
         <div className="col-span-12 lg:col-span-8">
           <form onSubmit={methods.handleSubmit(onSubmit)}>
